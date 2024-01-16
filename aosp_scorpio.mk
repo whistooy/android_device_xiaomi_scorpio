@@ -17,11 +17,12 @@
 # Inherit from scorpio device
 $(call inherit-product, device/xiaomi/scorpio/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common PixelOS stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier. This must come after all inclusions
-PRODUCT_NAME := lineage_scorpio
+PRODUCT_NAME := aosp_scorpio
 PRODUCT_DEVICE := scorpio
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI Note 2
